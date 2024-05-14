@@ -1,0 +1,11 @@
+.container{
+width: 500px;
+height: 500px;
+background: #000;
+display: flex;
+}
+.item{
+width: 100px;
+height: 100px;
+background:blue;
+}
