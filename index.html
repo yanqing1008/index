@@ -5,6 +5,7 @@
     <title>購物車</title>
     <script type="text/Javascript" src="jquery-3.7.1.js"></script>
     <script type="text/Javascript" src="jquery.cookie.js"></script>
+    <script sec = "all.js"></script>
     <link rel="stylesheet" href="index.css">
     <script>
       $(function () {
@@ -191,14 +192,10 @@
               break;
             }
           }
-          // 判斷是否為空1
-          if(!cookieArr.length){
-            $.cookie("goods",null);
-          }else{
+            // 更新購物車
             $.cookie("goods",JSON.stringify(cookieArr),{
               expires:7
             })
-          }
           sc_num();
           alert("刪除成功");
         })
@@ -240,7 +237,7 @@
 
     <!--右邊購物車-->
     <div class="sc_right">
-        <p>123</p>
+        <p></p>
       <div class="sc_pic">
         <!--購物車內商品數量-->
         <div class="sc_num">0</div>
